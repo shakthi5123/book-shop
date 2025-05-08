@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakthis's Book Store</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="./images/logo.png" alt="" class="logo">
+        </div>
+        <div class="nav-mid">
+            <ul class="lists">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Categories <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><strong>Non-fiction</strong></li>
+                        <li><a href="#">Biography</a></li>
+                        <li><a href="#">Self-Help</a></li>
+                        <li><a href="#">Science</a></li>
+
+                        <li><strong>fiction</strong></li>
+                        <li><a href="#">Science Fiction</a></li>
+                        <li><a href="#">Horror</a></li>
+                        <li><a href="#">Romance</a></li>
+
+                        <li><strong>Others</strong></li>
+                        <li><a href="#">Comics</a></li>
+                        <li><a href="#">Poetry</a></li>
+                        <li><a href="#">Magazines</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#">Best selling <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><strong>Non-fiction</strong></li>
+                        <li><a href="#">Sapiens</a></li>
+                        <li><a href="#">The Power of Now</a></li>
+                        <li><a href="#">Atomic Habits</a></li>
+
+                        <li><strong>fiction</strong></li>
+                        <li><a href="#">The Alchemist</a></li>
+                        <li><a href="#">To Kill a Mockingbird</a></li>
+                        <li><a href="#">The Midnight Library</a></li>
+
+                        <li><strong>Others</strong></li>
+                        <li><a href="#">The New Yorker</a></li>
+                        <li><a href="#">Milk and Honey</a></li>
+                        <li><a href="#">The Sandman</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="nav-right">
+            <i class="fa-solid fa-magnifying-glass search"></i>
+            <i class="fa-solid fa-cart-shopping cart"></i>
+        </div>
+    </nav>
+
+    <div class="cart-panel" id="cartPanel">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <span class="close-cart" id="closeCart">&times;</span>
+        </div>
+        <div class="cart-content">
+            <p>Your cart is empty</p>
+        </div>
+    </div>
+
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <input type="text" placeholder="Search for books..." class="search-input">
+            <i class="fa fa-search search-icon"></i>
+            <span class="close-btn" id="closeSearch">&times;</span>
+        </div>
+        
+    </div>
+
+    <div class="book-results"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
